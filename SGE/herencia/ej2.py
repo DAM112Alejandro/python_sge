@@ -28,8 +28,7 @@ class bici:
     def avanzar(self,kilometros_a_conducir):
         vehiculo.avanzar(self, kilometros_a_conducir)
         if self.kilometros>=50:
-            bici.hinchar_ruedas(self)
-            print(str(self.kilometro))
+            print("Tienes que hinchar las ruedas")
         else:
             print(str(self.kilometros))
     
@@ -40,6 +39,7 @@ micoche=coche(0,20)
 micoche.avanzar(100)
 micoche.repostar(20)
 micoche.avanzar(300)
+micoche.avanzar(10)
 
 mibici=bici(0)
 mibici.avanzar(40)
